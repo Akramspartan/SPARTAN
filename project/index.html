@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NewsCast </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <header class="hero">
+  <h1>Welcome to NewsCast360</h1>
+  <br>
+  <p>Connect. Share. Stay Updated.</p>
+</header>
+    <h1>NewsCast </h1>
+    <nav>
+<!-- Add inside <nav> -->
+<div class="dropdown">
+  <button class="dropbtn">☰ Menu</button>
+  <div class="dropdown-content">
+    <a href="signUp.html">Sign Up</a>
+    <a href="logIn.html">Login</a>
+    <a href="companies.html">News Companies</a>
+    <a href="help.html">Help</a>
+  </div>
+</div>
+    </nav>
+  </header>
+
+  <section class="main-content">
+    <div class="assistant-box">
+      <h2>🧠 AI Assistant</h2>
+      <p id="assistant-output">Hi! Ask me anything about today's news!</p>
+      <input type="text" id="user-input" placeholder="Type here..." />
+      <button onclick="talkToAssistant()">Send</button>
+    </div>
+  </section>
+
+<section class="actions">
+  <button class="main-btn">Trending</button>
+  <button class="main-btn">Upload News</button>
+</section>
+<form id="uploadForm" enctype="multipart/form-data" method="POST" action="upload.php">
+  <label for="file">Choose a file to post:</label><br>
+  <input type="file" id="file" name="file" accept="image/*,video/*,.pdf,.txt,.doc,.docx" required><br><br>
+
+  <div class="filename" id="filename"></div>
+  <div id="previewArea"></div>
+
+  <label for="desc">Description:</label><br>
+  <textarea id="desc" name="desc" placeholder="Write something..." rows="4" required></textarea><br><br>
+
+  <button type="submit">Upload</button>
+</form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
